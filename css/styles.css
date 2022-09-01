@@ -18,6 +18,7 @@
   --main-link-cl: #000000;
   --address-link-cl: rgba(255, 255, 255, 0.6);
   --main-bt-act: #188CE8;
+  --icons-cl: #AFB1B8;
 
 
   --border-cl: #ececec;
@@ -403,20 +404,39 @@ img {
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
+  margin-bottom: 30px;
 }
 
 
-.socials-list{
-  list-style: none;
+.socials{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .socials-link{
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--additional-txt-cl);
 }
 .socials-icon{
-  stroke: var(--main-link-cl);
+fill: var(--icons-cl);
 }
 
+.socials-link:hover,
+.socials-link:focus{
+  background-color: var(--active-link-txt);
+}
+
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon{
+  fill: var(--additional-txt-cl);
+}
 
 /**
   |============================
