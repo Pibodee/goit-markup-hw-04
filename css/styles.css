@@ -61,7 +61,11 @@ body {
   margin-right: auto;
 }
 
-/*header*/
+/**
+  |============================
+  | header
+  |============================
+*/
 
 .header {
   font-weight: 500;
@@ -152,7 +156,11 @@ body {
   color: var(--active-link-txt);
 }
 
-/* footer */
+/**
+  |============================
+  | Footer
+  |============================
+*/
 .footer {
   background-color: var(--hero-bg-cl);
   padding-top: 60px;
@@ -202,11 +210,23 @@ body {
   color: var(--active-link-txt);
 }
 
-/* hero */
+/**
+  |============================
+   Hero
+  |============================
+*/
 .hero {
   background-color: var(--hero-bg-cl);
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -250,7 +270,11 @@ body {
   background-color: var(--main-bt-act);
 }
 
-/* sections */
+/**
+  |============================
+  | sections
+  |============================
+*/
 
 .section {
   padding-top: 94px;
@@ -381,7 +405,24 @@ img {
   color: var(--secondary-txt-cl);
 }
 
-/* portfolio */
+
+.socials-list{
+  list-style: none;
+}
+
+.socials-link{
+  display: block;
+}
+.socials-icon{
+  stroke: var(--main-link-cl);
+}
+
+
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
