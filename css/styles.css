@@ -18,9 +18,8 @@
   --active-link-txt: #2196f3;
   --main-link-cl: #000000;
   --address-link-cl: rgba(255, 255, 255, 0.6);
-  --main-bt-act: #188CE8;
-  --icons-cl: #AFB1B8;
-
+  --main-bt-act: #188ce8;
+  --icons-cl: #afb1b8;
 
   --border-cl: #ececec;
 
@@ -154,7 +153,7 @@ body {
 
   color: var(--secondary-txt-cl);
 }
-.contacts-icon{
+.contacts-icon {
   fill: none;
   stroke: var(--secondary-txt-cl);
 }
@@ -165,7 +164,7 @@ body {
 }
 
 .contact-link:hover .contacts-icon,
-.contact-link:focus .contacts-icon{
+.contact-link:focus .contacts-icon {
   stroke: var(--active-link-txt);
 }
 
@@ -180,12 +179,12 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
-  align-items:baseline;
+  align-items: baseline;
 }
 
-.footer-nav{
+.footer-nav {
   margin-right: 70px;
 }
 
@@ -232,23 +231,23 @@ body {
   color: var(--active-link-txt);
 }
 
-.footer-header{
+.footer-header {
   text-transform: uppercase;
   margin-bottom: 20px;
 
   font-size: 14px;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
 
   color: var(--additional-txt-cl);
 }
 
-.soc-list{
+.soc-list {
   display: flex;
   gap: 10px;
 }
 
-.soc-link{
+.soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,12 +257,12 @@ body {
   background-color: var(--footer-soc-bgcl);
 }
 
-.soc-icon{
+.soc-icon {
   fill: var(--additional-txt-cl);
 }
 
 .soc-link:hover,
-.soc-link:focus{
+.soc-link:focus {
   background-color: var(--active-link-txt);
 }
 /**
@@ -279,7 +278,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -322,7 +322,7 @@ body {
 }
 
 .btn:hover,
-.btn:focus{
+.btn:focus {
   background-color: var(--main-bt-act);
 }
 
@@ -364,7 +364,7 @@ body {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
-.specifications-icon{
+.specifications-icon {
   padding: 25px 100px;
   margin-bottom: 30px;
   background-color: var(--secondary-bg-cl);
@@ -467,17 +467,16 @@ img {
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
-
-.socials{
+.socials {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
 
-.socials-link{
+.socials-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -486,30 +485,28 @@ img {
   border-radius: 50%;
   background-color: var(--additional-txt-cl);
 }
-.socials-icon{
-fill: var(--icons-cl);
+.socials-icon {
+  fill: var(--icons-cl);
 }
 
 .socials-link:hover,
-.socials-link:focus{
+.socials-link:focus {
   background-color: var(--active-link-txt);
 }
 
-
 .socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon{
+.socials-link:focus .socials-icon {
   fill: var(--additional-txt-cl);
 }
 
-.client-list{
-   display: flex;
+.client-list {
+  display: flex;
   gap: 30px;
 }
 
-
-.client-link{
+.client-link {
   display: flex;
-   align-items: center;
+  align-items: center;
   justify-content: center;
 
   width: 170px;
@@ -518,17 +515,17 @@ fill: var(--icons-cl);
   border-radius: 4px;
 }
 
-.client-icon{
+.client-icon {
   fill: var(--icons-cl);
 }
 
-.client-link:hover, 
+.client-link:hover,
 .client-link:focus {
   border: 1px solid var(--active-link-txt);
 }
-.client-link:hover .client-icon, 
-.client-link:focus .client-icon{
-  fill:var(--active-link-txt);
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--active-link-txt);
 }
 
 /**
@@ -589,7 +586,7 @@ fill: var(--icons-cl);
 /* cards */
 .gallery-card {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-  
+
   background-color: var(--additional-bg-cl);
 }
 
@@ -606,6 +603,8 @@ fill: var(--icons-cl);
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+
+  color: var(--main-txt-cl);
 }
 
 .card-text {
@@ -614,4 +613,14 @@ fill: var(--icons-cl);
   letter-spacing: 0.03em;
 
   color: var(--secondary-txt-cl);
+}
+
+.gallery-link {
+  text-decoration: none;
+}
+
+.gallery-link:hover .wrap,
+.gallery-link:focus .wrap {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
